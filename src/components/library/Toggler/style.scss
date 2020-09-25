@@ -1,0 +1,38 @@
+@import '../../../styles/variables';
+
+.toggler {
+    display: inline-flex;
+
+    border: 1px solid;
+    border-radius: 20px;
+
+    .toggler__item {
+        padding: 5px 15px;
+        border-radius: 20px;
+    }
+
+    &.toggler--blue {
+        border-color: $dark-blue;
+        color: $dark-blue;
+
+        .toggler__item {
+            &.active {
+                background-color: $dark-blue;
+                color: $light-blue;
+            }
+        }
+    }
+
+    &.toggler--lightblue {
+        border-color: $light-blue;
+        color: $white;
+
+        .toggler__item {
+            &.active {
+                background-color: $light-blue;
+                color: $dark-blue;
+            }
+        }
+    }
+
+}

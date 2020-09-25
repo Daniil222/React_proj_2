@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.card__subtitle {
+    margin-bottom: 3px;
+
+    font-weight: 400;
+    font-size: 14px;
+
+    color: $black;
+    text-align: center;
+
+}
+.section--dark {
+    .card__subtitle {
+        color: $white;
+    }
+}

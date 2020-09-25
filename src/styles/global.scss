@@ -1,0 +1,49 @@
+@import 'fonts';
+@import 'variables';
+
+* {
+	box-sizing: border-box;
+	font-family: 'SourceSansPro', Arial, sans-serif;;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	padding: 30px 0 0;
+}
+
+.section--welcome {
+
+	background: url('../assets/images/background-1.jpg') left center no-repeat;
+	background-size: cover;
+
+	.background-overlay {
+		padding: 40px 0;
+		background: rgba($dark-blue, 0.8);
+	}
+}
+
+.section--trailers {
+	background: url('../assets/images/background-2.jpg') left center no-repeat;
+	background-size: cover;
+
+	.background-overlay {
+		padding: 30px 0 0;
+		background: rgba($dark-blue, 0.75);
+	}
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+
+	margin: 0 auto;
+}
+

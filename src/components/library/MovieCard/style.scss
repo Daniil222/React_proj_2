@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.card {
+    margin-left: 30px;
+
+    .card__image {
+        position: relative;
+
+        img {
+            width: 150px;
+
+            border-radius: 7px;
+        }
+    }
+
+    .card__content {
+        padding-top: 25px;
+
+        position: relative;
+    }
+
+    &.card-trailer {
+        img {
+            width: 300px;
+        }
+    }
+}

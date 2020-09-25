@@ -1,0 +1,90 @@
+@import '../../../styles/variables';
+
+.profile {
+    width: 35px;
+    height: 35px;
+
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    
+    .profile__img {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 50%;
+        background: #cccccc;
+
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    .profile__menu {
+        min-width: 200px;
+
+        display: none;
+
+        padding: 5px 0;
+        margin: 0;
+
+        position: absolute;
+        top: 37px;
+
+        background-color: $white;
+        border: 1px solid $grey;
+        border-radius: 5px;
+
+        list-style-type: none;
+        z-index: 1;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-bottom-color: #ffffff;
+            border-top: 0;
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+
+        li {
+
+            a {
+                padding: 5px 10px;
+
+                display: block;
+
+                text-decoration: none;
+                color: $black;
+                font-size: 14px;
+
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: $dark-blue;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .profile__menu {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+.title {
+    padding-left: 30px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-weight: bold;
+
+    &.title--white {
+        color: $white;
+    }
+
+    &.title--center {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    h2 {
+        margin-right: 20px;
+
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .subtitle, h3 {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 32px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+
+.card__date {
+    color: $light-grey;
+    font-size: 14px;
+}
+
+.section--dark {
+    .card__date {
+        color: rgba($white, 0.75);
+    }
+}

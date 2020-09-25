@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.circle-rank {
+    width: 35px;
+    height: 35px;
+
+    padding: 1px;
+
+    position: absolute;
+    top: -21px;
+    left: 17px;
+
+    border-radius: 50%;
+    background-color: $dark-blue;
+
+
+    @for $percent from 1 through 100 {
+
+        .circle-rank-#{$percent} {
+
+            .circle {
+                stroke: $light-blue;
+                fill: none;
+                stroke-width: 2;
+                stroke-linecap: round;
+            }
+        }
+    }
+
+    .circle-rank__number {
+        height: 35px;
+        width: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+
+        .circle-rank__percent {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+
+            font-size: 4px;
+        }
+    }
+
+}
